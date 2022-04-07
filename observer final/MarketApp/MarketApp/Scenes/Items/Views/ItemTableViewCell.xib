@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemTableViewCell" rowHeight="88" id="5CU-9p-9xA" customClass="ItemTableViewCell" customModule="MarketApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5CU-9p-9xA" id="cfQ-Wk-I4h">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FeW-Wm-0z0">
+                        <rect key="frame" x="16" y="12" width="383" height="64"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="bFF-Gb-9f5">
+                                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="0ic-78-lEv"/>
+                                    <constraint firstAttribute="width" constant="64" id="F8x-C3-zqj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: 30 TL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjW-JZ-s1C">
+                                <rect key="frame" x="70" y="22" width="92" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfE-Yt-JEP">
+                                <rect key="frame" x="258" y="0.0" width="110" height="64"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KO2-r6-nhN" customClass="CounterView" customModule="MarketApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="64"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="iea-Rr-Im6"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="64" id="3rG-iH-V6g"/>
+                            <constraint firstItem="EjW-JZ-s1C" firstAttribute="leading" secondItem="bFF-Gb-9f5" secondAttribute="trailing" constant="6" id="5OJ-io-CR8"/>
+                            <constraint firstItem="EjW-JZ-s1C" firstAttribute="centerY" secondItem="FeW-Wm-0z0" secondAttribute="centerY" id="8Ra-d2-XcY"/>
+                            <constraint firstAttribute="trailing" secondItem="kfE-Yt-JEP" secondAttribute="trailing" constant="15" id="ArO-64-kRr"/>
+                            <constraint firstItem="bFF-Gb-9f5" firstAttribute="leading" secondItem="FeW-Wm-0z0" secondAttribute="leading" id="WOx-33-Mi3"/>
+                            <constraint firstItem="kfE-Yt-JEP" firstAttribute="top" secondItem="FeW-Wm-0z0" secondAttribute="top" id="YVe-1j-dXI"/>
+                            <constraint firstItem="bFF-Gb-9f5" firstAttribute="centerY" secondItem="FeW-Wm-0z0" secondAttribute="centerY" id="c07-Po-63S"/>
+                            <constraint firstAttribute="bottom" secondItem="kfE-Yt-JEP" secondAttribute="bottom" id="kqv-nH-XRY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FeW-Wm-0z0" firstAttribute="leading" secondItem="cfQ-Wk-I4h" secondAttribute="leading" constant="16" id="Aie-Kd-WbZ"/>
+                    <constraint firstItem="FeW-Wm-0z0" firstAttribute="top" secondItem="cfQ-Wk-I4h" secondAttribute="top" constant="12" id="FY9-9k-3pf"/>
+                    <constraint firstAttribute="bottom" secondItem="FeW-Wm-0z0" secondAttribute="bottom" constant="12" id="cNC-KJ-AxE"/>
+                    <constraint firstAttribute="trailing" secondItem="FeW-Wm-0z0" secondAttribute="trailing" constant="15" id="w1F-cN-1b1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="counterView" destination="KO2-r6-nhN" id="Gmy-y6-UaI"/>
+                <outlet property="itemImageView" destination="bFF-Gb-9f5" id="lGN-nx-T3x"/>
+                <outlet property="priceLabel" destination="EjW-JZ-s1C" id="SK0-Bd-BxY"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="64.955357142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="book" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
